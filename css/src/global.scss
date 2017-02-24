@@ -82,6 +82,92 @@ a.button-small-alt {
 	background: #444;
 }
 
+button.button {
+	font-size: 1rem;
+	padding:.75em 3em;
+	border-radius:3em;
+	background: $highlight;
+	color:#fff;
+	display: inline-block;
+	outline: none;
+	border: none;
+}
+button.button:hover {
+	// filter:brightness(1.3);
+	filter:brightness(.8);
+}
+button.button:active {
+	filter:brightness(1.3);
+}
+button.button-alt {
+	@extend button.button;
+	background: #444;
+}
+button.button-small {
+	display: inline-block;
+	padding:.25em 1em;
+	color:#fff;
+	font-size:.75em;
+	text-transform: uppercase;
+	background: $highlight;
+	font-weight: bold;
+	border-radius:3em;
+}
+button.button-small:hover {
+	// filter:brightness(1.2);
+	filter:brightness(.8);
+}
+button.button-small:active {
+	filter:brightness(1.3);
+}
+button.button-small-alt {
+	@extend button.button-small;
+	background: #444;
+}
+/* INPUTS
+=========================================*/
+input.button {
+	padding:.75em 3em;
+	border-radius:3em;
+	background: $highlight;
+	color:#fff;
+	display: inline-block;
+	outline: none;
+	border: none;
+}
+input.button:hover {
+	// filter:brightness(1.3);
+	filter:brightness(.8);
+}
+input.button:active {
+	filter:brightness(1.3);
+}
+input.button-alt {
+	@extend a.button;
+	background: #444;
+}
+input.button-small {
+	display: inline-block;
+	padding:.25em 1em;
+	color:#fff;
+	font-size:.75em;
+	text-transform: uppercase;
+	background: $highlight;
+	font-weight: bold;
+	border-radius:3em;
+}
+input.button-small:hover {
+	// filter:brightness(1.2);
+	filter:brightness(.8);
+}
+input.button-small:active {
+	filter:brightness(1.3);
+}
+input.button-small-alt {
+	@extend a.button-small;
+	background: #444;
+}
+
 /* ICONS
 =========================================*/
 
